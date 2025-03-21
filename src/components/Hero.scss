@@ -109,7 +109,8 @@
 .head1 {
     top: 80px;
     position: absolute;
-    
+    z-index: 5;  // Ensure content is visible above canvas
+
     @include mobile4 {
         top: 40px;
         position: relative;
@@ -133,7 +134,7 @@
             background: rgba(0, 0, 0, 0.3);
             width: max-content;
             display: flex;
-            z-index: 2;
+            z-index: 10;  // Ensure social icons are visible
             gap: 0.8rem;
             border-radius: 3rem;
             position: relative;
@@ -158,6 +159,7 @@
 }
 
 .imgcontainer1 {
+    position: absolute;
     right: 4rem;
     top: 6rem;
     width: 300px;
@@ -166,8 +168,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    
+    z-index: 5;  // Ensure image is visible above canvas
+
     @include mobile3 {
         width: 200px;
         height: 200px;
@@ -187,4 +189,10 @@
         border-radius: 45%;
         max-width: 100%;
     }
+}
+
+/* Fix for overlapping issue with ComputersCanvas */
+section {
+    position: relative;
+    z-index: 1;
 }
