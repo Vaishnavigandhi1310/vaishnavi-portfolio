@@ -42,6 +42,9 @@ import {
       title: "Workshop on Ethical Hacking from IIT Indore by Techobytes.",
     },
     {
+      title: "Deloitte Australia Data Analytics Job Simulation on Forage - March 2025 .",
+    },
+    {
       title: "Workshop on Data Science from IIT Indore by Edureka.",
     },
     {
