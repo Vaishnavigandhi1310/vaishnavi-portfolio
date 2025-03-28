@@ -50,3 +50,11 @@ $width5: 1024px;
 body{
     zoom: 0.85;
 }
+
+
+.qwertyu{
+    display: block;
+    @media (max-width:450px) {
+        display: none;
+    }
+}
